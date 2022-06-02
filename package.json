@@ -1,0 +1,33 @@
+{
+  "name": "demo-app",
+  "version": "1.0.0",
+  "description": "CodeZero Demo App",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "yarn workspaces run build",
+    "bundle": "yarn workspaces run bundle",
+    "develop-frontend": "yarn workspace frontend run develop",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c6o/demo-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/c6o/demo-app/issues"
+  },
+  "homepage": "https://github.com/c6o/demo-app#readme",
+  "devDependencies": {
+    "@typescript-eslint/parser": "^5.25.0",
+    "eslint": "^8.5.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-typescript": "^2.7.1",
+    "eslint-plugin-import": "^2.26.0"
+  }
+}
